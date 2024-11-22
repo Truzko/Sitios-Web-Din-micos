@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Estudios</title>
+</head>
+<body>
+    <h2>Ingrese su nombre y seleccione su nivel de estudios:</h2>
+    <form action="procesar.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required><br><br>
+
+        <input type="radio" name="estudios" id="sin_estudios" value="Sin Estudios">
+        <label for="sin_estudios">Sin Estudios</label><br>
+
+        <input type="radio" name="estudios" id="primarios" value="Estudios Primarios">
+        <label for="primarios">Estudios Primarios</label><br>
+
+        <input type="radio" name="estudios" id="secundarios" value="Estudios Secundarios">
+        <label for="secundarios">Estudios Secundarios</label><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

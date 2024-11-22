@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushiru</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Sección del banner principal -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">SUSHIRU</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="#productos" class="boton-productos">Ver Productos</a></li>
+                <li><a href="../php/inicioADMIN.php" class="btn-header">Iniciar sesion</a></li>
+            </ul>
+        </nav>
+
+      
+    </header>
+
+    <div class="banner-content">
+        <h1>SUSHIRU</h1>
+        <p>Auténtica experiencia de sushi con ingredientes frescos y sabores únicos.</p>
+        <a href="#productos" class="boton-productos">VER PRODUCTOS</a>
+    </div>
+
+   
+    <!-- Sección de experiencia de sushi -->
+    <section id="experiencia" class="experiencia">
+        <h2>Auténtica experiencia de sushi en cada bocado</h2>
+        <p>En SUSHIRU, traemos los vibrantes sabores de la cocina oriental directamente a Avellaneda. Nuestro sushi se elabora con ingredientes de la más alta calidad.</p>
+        <a href="#contacto" class="boton-productos">Contáctanos</a>
+    </section>
+
+    <!-- Sección de productos -->
+    <section id="productos" class="products">
+        <h2>Nuestros deliciosos platillos</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="../img/productos/sushi1.jpg" alt="Classic Sushi Roll">
+                <h3>Classic Sushi Roll</h3>
+                <p>Una experiencia tradicional de sushi con ingredientes frescos.</p>
+            </div>
+            <div class="product-item">
+                <img src="../img/productos/sushi2.jpg" alt="Spicy Tuna Tartare">
+                <h3>Spicy Tuna Tartare</h3>
+                <p>Una mezcla vibrante de sabores y texturas.</p>
+            </div>
+            <div class="product-item">
+                <img src="../img/productos/sushi3.jpg" alt="Vegetable Tempura">
+                <h3>Vegetable Tempura</h3>
+                <p>Una mezcla deliciosa de vegetales crujientes y rebozados.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección de contacto -->
+<section id="contacto" class="contact">
+    <div class="contact-container">
+        <div class="contact-form">
+            <h2>Nos encantaría saber de ti</h2>
+            <form action="process_contact.php" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">Acepto que este sitio web almacene mi información para responder a mi consulta.</label>
+                </div>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h2>Información de contacto</h2>
+            <ul>
+                <li><strong>Email:</strong> sushiru@example.com</li>
+                <li><strong>Ubicación:</strong> Avellaneda, Buenos Aires</li>
+                <li><strong>Teléfono:</strong> +54 555-555-555</li>
+                <li><strong>Horarios:</strong></li>
+                <ul class="horarios">
+                    <li>Lunes a Viernes: 9am - 10pm</li>
+                    <li>Sábados: 9am - 6pm</li>
+                    <li>Domingos: 9am - 12pm</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<script src="/js/script.js" type="module"></script>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <a href="#home">SUSHIRU</a>
+        </div>
+        <ul class="footer-links">
+            <li><a href="#about">Nosotros</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="footer-info">
+            <p>&copy; 2024 Sushiru. Todos los derechos reservados.</p>
+            <p>Email: sushiru@example.com</p>
+            <p>Teléfono: +54 555-555-555</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

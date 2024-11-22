@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obra Social - Página Principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .salud-section  {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .salud-section  .text-section {
+            max-width: 50%;
+        }
+
+        .salud-section  .text-section h2 {
+            color: #FF6A00; /* Orange color */
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .salud-section .text-section p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .salud-section  .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #FF6A00;
+            border: 2px solid #FF6A00;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .salud-section .cta-button:hover {
+            background-color: #FF6A00;
+            color: white;
+        }
+
+        .salud-section  .video-section {
+            max-width: 45%;
+        }
+
+        .salud-section  .video-section iframe {
+            width: 100%;
+            height: 250px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .salud-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .salud-section  .text-section,  .salud-section  .video-section {
+                max-width: 100%;
+            }
+
+            .salud-section .video-section iframe {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3" href="index.html">Obra social</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5" aria-current="page" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="../php/1registro.php">Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="../php/1login.php">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1>Bienvenido a Nuestra Obra Social</h1>
+        <p>Brindamos los mejores servicios para nuestros afiliados.</p>
+        
+        <!-- Carousel de Bootstrap -->
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/ObraSocialConsultas.png" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/ObraSocialNuevo.png" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/ObraSocialRegistro.jpg" class="d-block w-100" alt="Imagen 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sección de Noticias -->
+    <div class="container mt-5">
+        <h2>Últimas Noticias</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../img/noticia1.jpg" class="card-img-top" alt="Noticia 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Título de Noticia 1</h5>
+                        <p class="card-text">Cuidemos la salud</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../img/noticia2.jpg" class="card-img-top" alt="Noticia 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Título de Noticia 2</h5>
+                        <p class="card-text">Cuidemos el medio ambiente para crecer.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="../img/noticia3.webp" class="card-img-top" alt="Noticia 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Título de Noticia 3</h5>
+                        <p class="card-text">Cuidemos a la familia entre todos</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Información -->
+    <div class="container mt-5">
+        <h2>Sobre Nosotros</h2>
+        <p>La Obra Social X se dedica a brindar cobertura médica integral a nuestros afiliados. Nuestro compromiso es garantizar la salud y bienestar de nuestra comunidad a través de un servicio de calidad y accesible.</p>
+        <p>Ofrecemos diversos planes que se adaptan a las necesidades de cada uno de nuestros afiliados. Desde cobertura básica hasta planes premium con beneficios adicionales, trabajamos para que tengas la mejor atención posible.</p>
+    </div>
+
+    <!--  Plan de salud -->
+    <div class="container salud-section">
+
+        <div class="text-section">
+            <h2>Descubrí el plan ideal para cada etapa de tu vida</h2>
+            <p>Servicios completos para cuidar tu salud todos los días con la menor cantidad de copagos. Atención online 24hs, guardia online, emergencias, visita médica, amplia cartilla médica, atención en centros propios, estudios y laboratorios, chequeo preventivo anual, cobertura indemnizatoria ante internaciones, rehabilitación y kinesiología, fonoaudiología, salud mental, descuentos en farmacia, club de beneficios y gestor de salud para consultas.</p>
+            <a href="#" class="cta-button">¡Consultá ahora!</a>
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-section">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Health Plan Video" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 Obra Social X. Todos los derechos reservados.</p>
+            <p><a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

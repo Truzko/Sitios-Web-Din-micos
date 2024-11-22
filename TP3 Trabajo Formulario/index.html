@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro - Mi web</title>
+</head>
+<body>
+
+<h1>Formulario de registro</h1>
+
+<form action="formulario.php" method="GET">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" maxlength="50" required><br><br>
+
+    <label for="apellidos">Apellidos:</label>
+    <input type="text" id="apellidos" name="apellidos" maxlength="50" required><br><br>
+
+    <label for="sexo">Sexo:</label>
+    <input type="radio" id="hombre" name="sexo" value="hombre" required>
+    <label for="hombre">Hombre</label>
+    <input type="radio" id="mujer" name="sexo" value="mujer" required>
+    <label for="mujer">Mujer</label><br><br>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required><br><br>
+
+    <input type="checkbox" id="info" name="info" checked>
+    <label for="info">Deseo recibir información sobre novedades y ofertas</label><br><br>
+
+    <input type="checkbox" id="condiciones" name="condiciones" required>
+    <label for="condiciones">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label><br><br>
+
+    <label for="poblacion">Población:</label>
+    <select id="poblacion" name="poblacion">
+        <option value="Alicante">Alicante</option>
+        <option value="Madrid">Madrid</option>
+        <option value="Sevilla">Sevilla</option>
+        <option value="Valencia">Valencia</option>
+    </select><br><br>
+
+    <label for="descripcion">Descripción:</label><br>
+    <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea><br><br>
+
+    <input type="submit" name="enviar"value="Enviar">
+</form>
+
+</body>
+</html>

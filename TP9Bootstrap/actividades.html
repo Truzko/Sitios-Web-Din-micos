@@ -1,0 +1,70 @@
+<!--Archivo simple con bootstrap 5-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Simple Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h2 class="text-center">Actividad simple con bootstrap</h2>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Bootstrap 5</h1>
+        <p class="text-center">Pagina simple con Bootstrap 5</p>
+        <div class="text-center">
+            <button class="btn btn-primary">tocame ubu</button>
+            
+        </div>
+
+        <!--
+        Bootstrap 4: Dependía de jQuery para todas las interacciones JavaScript (como los botones con dropdowns, tooltips, o modales). 
+        Esto significaba que cualquier interacción dinámica requería la inclusión de jQuery, lo cual podía aumentar el peso de la página y su tiempo de carga.
+
+        Bootstrap 5: Eliminó la dependencia de jQuery, usando JavaScript puro (vanilla JS) para sus componentes. 
+        Esto hace que los botones y otros elementos interactivos sean más eficientes y rápidos. Al eliminar la necesidad de jQuery, se reduce la carga de recursos, lo cual mejora el 
+        rendimiento.
+
+    En Bootstrap 4, si querías un botón que ocupara todo el ancho de su contenedor, usabas la clase btn-block:
+    
+    <button type="button" class="btn btn-primary btn-block">Tocame</button>
+    
+    En Bootstrap 5, btn-block fue eliminado y reemplazado por la clase utilitaria w-100 para indicar un ancho del 100%:
+        
+    <button type="button" class="btn btn-primary w-100">Tocame</button>
+    
+        -->
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--Actividad de columnas-->
+
+
+    <h2 class="text-center">Actividad de columnas</h2>
+
+    <div class="container">
+        <div class="row">
+            <!-- Columna 1 -->
+            <div class="col-md-4 col-12 bg-primary text-white text-center p-3">
+                Columna 1
+            </div>
+            <!-- Columna 2 -->
+            <div class="col-md-4 col-12 bg-secondary text-white text-center p-3">
+                Columna 2
+            </div>
+            <!-- Columna 3 -->
+            <div class="col-md-4 col-12 bg-success text-white text-center p-3">
+                Columna 3
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

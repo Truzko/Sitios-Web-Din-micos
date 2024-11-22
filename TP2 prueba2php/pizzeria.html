@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Pizzas</title>
+</head>
+<body>
+    <h2>Pedido de Pizzas</h2>
+    <form action="procesar.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required><br><br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" name="direccion" id="direccion" required><br><br>
+
+        <input type="checkbox" name="jamon_queso" id="jamon_queso">
+        <label for="jamon_queso">Jamon y Queso</label>
+        <input type="number" name="cantidad_jamon_queso" id="cantidad_jamon_queso" min="1" value="1">
+        <br><br>
+
+        <input type="checkbox" name="napolitana" id="napolitana">
+        <label for="napolitana">Napolitana</label>
+        <input type="number" name="cantidad_napolitana" id="cantidad_napolitana" min="1" value="1">
+        <br><br>
+
+        <input type="checkbox" name="mozzarella" id="mozzarella">
+        <label for="mozzarella">Mozzarella</label>
+        <input type="number" name="cantidad_mozzarella" id="cantidad_mozzarella" min="1" value="1">
+        <br><br>
+
+        <input type="submit" value="Confirmar">
+    </form>
+</body>
+</html>
